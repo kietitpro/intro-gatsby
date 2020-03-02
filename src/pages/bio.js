@@ -11,14 +11,29 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+// Replacing the previous content with our "People" component. I can now reuse the component with my custom styles only appled to that component using CSS Modules
+import People from "../components/people"
+
 // Adding a component inside the 'pages' directory will automatically create that page for you with the path "/bio"
 const Bio = () => {
     return (
         <Layout>
             <SEO title="Bio" />
-            <img src="https://source.unsplash.com/random/400x200" alt=""/>
-            <h1>Hi, My name is Kiet.</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis aut necessitatibus dolor odit fuga corporis, a vitae unde itaque illo eaque, ipsum tenetur, amet nemo incidunt. Doloribus praesentium consequatur molestias possimus fugit vitae quis porro aliquam! Quas dolorum facilis quos est natus expedita labore beatae recusandae aut dolorem error, laudantium nulla, quidem nemo fuga eveniet unde rerum suscipit atque eius obcaecati odit consectetur. Possimus illo laboriosam quidem alias ullam temporibus exercitationem, incidunt delectus ducimus eum officiis veniam, vel, pariatur molestias beatae quisquam vitae aspernatur eligendi dicta? Quia odio expedita cum sunt in quasi debitis, officia a adipisci sit amet optio!</p>
+            <People
+                avatar="https://source.unsplash.com/random"
+                title="Kiet"
+                excerpt="This is some text"
+            />
+            <People
+                avatar="https://source.unsplash.com/random"
+                title="Matt"
+                excerpt="This is some text"
+            />
+            <People
+                avatar="https://source.unsplash.com/random"
+                title="Chris"
+                excerpt="This is some text"
+            />
             <Link to="/">&larr; Back to Home</Link>
         </Layout>
     )
